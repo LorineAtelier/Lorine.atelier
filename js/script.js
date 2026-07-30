@@ -28,4 +28,16 @@ if (format && reproPrice) {
 
     });
 
+    const addToCart = document.getElementById("add-to-cart");
+
+if (addToCart) {
+
+    addToCart.addEventListener("click", () => {
+
+        window.location.href = "panier.html";
+
+    });
+
+}
+
 }
