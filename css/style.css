@@ -91,9 +91,9 @@ footer {
     transform:translateY(-8px);
 }
 
-.logo{
-    width:220px;
-    max-width:80%;
+.hero-logo{
     display:block;
-    margin:0 auto 20px;
+    width:700px;
+    max-width:95%;
+    margin:40px auto;
 }
