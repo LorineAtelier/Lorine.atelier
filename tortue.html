@@ -34,7 +34,7 @@
 
     <div class="product-image">
 
-        <img src="images/test-aquarelle.jpg" alt="Tortue">
+        <img src="images/test-aquarelle.jpg" alt="Méduse">
 
     </div>
 
@@ -42,30 +42,61 @@
 
         <h1>Tortue</h1>
 
-        <p class="price">45 €</p>
 
         <p class="description">
           Inspirée par l'élégance naturelle de la tortue marine, cette aquarelle originale capture toute la délicatesse de ses formes et la douceur de son univers aquatique.
           Chaque détail est peint à la main afin de créer une œuvre unique et intemporelle.
         </p>
 
-        <div class="details">
+       <div class="product-options">
 
-            <p><strong>Format :</strong> A4</p>
+    <div class="tabs">
 
-            <p><strong>Technique :</strong> Aquarelle</p>
+        <button class="tab active" data-target="original">
+            Original
+        </button>
 
-            <p><strong>Papier :</strong> Qualité 300 g</p>
-
-            <p><strong>Original :</strong> Oui</p>
-
-        </div>
-
-        <a href="#" class="buy-button">
-            Ajouter au panier
-        </a>
+        <button class="tab" data-target="reproduction">
+            Reproduction
+        </button>
 
     </div>
+
+    <div id="original" class="tab-content active">
+
+        <p>✓ Pièce unique</p>
+        <p>✓ Signée à la main</p>
+
+        <p class="price">45 €</p>
+
+    </div>
+
+    <div id="reproduction" class="tab-content">
+
+        <label>Choisissez un format :</label>
+
+        <select id="format">
+
+            <option value="18">A5 - 18 €</option>
+            <option value="28" selected>A4 - 28 €</option>
+            <option value="39">A3 - 39 €</option>
+
+        </select>
+
+        <p class="price">
+            <span id="repro-price">28 €</span>
+        </p>
+
+        <p>Papier qualité 300g</p>
+
+    </div>
+
+</div>
+
+<a href="#" class="buy-button">
+    Ajouter au panier
+</a>
+
 
 </section>
 
@@ -75,6 +106,8 @@
 
 </footer>
 
+    <script src="js/script.js"></script>
+    
 </body>
     
 
