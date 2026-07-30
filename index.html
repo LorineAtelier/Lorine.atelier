@@ -1,69 +1,164 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atelier artistique</title>
+
+    <title>Lorine Atelier | Aquarelles & créations digitales</title>
+
     <style>
+
         body {
             margin: 0;
-            font-family: Georgia, serif;
-            background: #faf7f2;
-            color: #333;
-            text-align: center;
+            font-family: "Georgia", serif;
+            background: #fbf5ed;
+            color: #4b4038;
         }
 
         header {
-            padding: 60px 20px;
+            text-align: center;
+            padding: 70px 20px;
+            background: #f5e8dc;
         }
 
         h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
+            font-size: 3.2rem;
+            font-weight: normal;
+            margin: 0;
+            color: #80665a;
         }
 
-        p {
+        .subtitle {
             font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        nav {
+            text-align: center;
+            padding: 20px;
+            background: #fffaf5;
+        }
+
+        nav a {
+            color: #80665a;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.7;
         }
 
         .gallery {
             display: flex;
+            gap: 25px;
             justify-content: center;
-            gap: 20px;
             flex-wrap: wrap;
-            padding: 40px;
         }
 
         .card {
             background: white;
-            padding: 20px;
-            border-radius: 12px;
-            width: 250px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            width: 260px;
+            padding: 25px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(120,90,70,0.12);
         }
+
+        .card h2 {
+            color: #927565;
+            font-weight: normal;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #f5e8dc;
+            color: #80665a;
+        }
+
     </style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>Bienvenue dans notre atelier</h1>
-    <p>Aquarelles, illustrations et créations numériques</p>
+    <h1>Lorine Atelier</h1>
+    <p class="subtitle">
+        Aquarelles délicates & créations numériques inspirées
+    </p>
 </header>
 
-<section class="gallery">
 
-    <div class="card">
-        <h2>Aquarelles</h2>
-        <p>Découvrez nos créations originales.</p>
-    </div>
+<nav>
+    <a href="#">Accueil</a>
+    <a href="#">Aquarelles</a>
+    <a href="#">Créations digitales</a>
+    <a href="#">Contact</a>
+</nav>
 
-    <div class="card">
-        <h2>Créations digitales</h2>
-        <p>Illustrations et œuvres numériques.</p>
-    </div>
+
+<section>
+
+<div class="intro">
+
+<p>
+Bienvenue dans l'univers de Lorine Atelier.
+</p>
+
+<p>
+Des créations réalisées avec douceur, entre couleurs pastel,
+matières naturelles et imagination.
+</p>
+
+</div>
+
+
+<div class="gallery">
+
+<div class="card">
+<h2>Aquarelles</h2>
+<p>
+Œuvres originales peintes à la main.
+</p>
+</div>
+
+
+<div class="card">
+<h2>Créations digitales</h2>
+<p>
+Illustrations numériques et créations à télécharger.
+</p>
+</div>
+
+
+<div class="card">
+<h2>Sur mesure</h2>
+<p>
+Des créations personnalisées selon vos envies. En demande via la messagerie Instagram
+</p>
+</div>
+
+</div>
 
 </section>
 
+
+<footer>
+© Lorine Atelier
+</footer>
+
+
 </body>
+
 </html>
