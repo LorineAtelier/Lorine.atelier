@@ -90,3 +90,10 @@ footer {
 .card:hover{
     transform:translateY(-8px);
 }
+
+.logo{
+    width:220px;
+    max-width:80%;
+    display:block;
+    margin:0 auto 20px;
+}
