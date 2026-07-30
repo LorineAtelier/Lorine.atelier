@@ -49,18 +49,49 @@
             Chaque détail est peint à la main afin de créer une œuvre unique et poétique.
         </p>
 
-        <div class="details">
+       <div class="product-options">
 
-            <p><strong>Format :</strong> A4</p>
+    <div class="tabs">
+        <button class="tab active" onclick="showOriginal()">
+            Original
+        </button>
 
-            <p><strong>Technique :</strong> Aquarelle</p>
+        <button class="tab" onclick="showReproduction()">
+            Reproduction
+        </button>
+    </div>
 
-            <p><strong>Papier :</strong> Coton 300 g</p>
+    <div id="original">
 
-            <p><strong>Original :</strong> Oui</p>
+        <p>✓ Pièce unique</p>
+        <p>✓ Signée à la main</p>
+        <p>✓ Certificat d'authenticité</p>
 
-        </div>
+        <p class="price">45 €</p>
 
+    </div>
+
+    <div id="reproduction" style="display:none;">
+
+        <label for="format">Choisissez un format :</label>
+
+        <select id="format">
+
+            <option>A5 - 18 €</option>
+            <option>A4 - 28 €</option>
+            <option>A3 - 39 €</option>
+
+        </select>
+
+        <p>Papier Fine Art</p>
+
+    </div>
+
+</div>
+
+<a href="#" class="buy-button">
+    Ajouter au panier
+</a>
         <a href="#" class="buy-button">
             Ajouter au panier
         </a>
