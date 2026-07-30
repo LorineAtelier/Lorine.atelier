@@ -17,6 +17,7 @@ tabs.forEach(tab => {
     });
 
 });
+
 const format = document.getElementById("format");
 const reproPrice = document.getElementById("repro-price");
 
@@ -28,7 +29,9 @@ if (format && reproPrice) {
 
     });
 
-    const addToCart = document.getElementById("add-to-cart");
+}
+
+const addToCart = document.getElementById("add-to-cart");
 
 if (addToCart) {
 
@@ -37,7 +40,5 @@ if (addToCart) {
         window.location.href = "panier.html";
 
     });
-
-}
 
 }
