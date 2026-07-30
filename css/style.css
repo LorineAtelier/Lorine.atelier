@@ -123,8 +123,11 @@ footer {
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:20px;
-    background:#efe4d8;
+    background:
+        linear-gradient(rgba(245,237,228,.45), rgba(245,237,228,.45)),
+        url("../images/hero.jpg");
+    background-size:cover;
+    background-position:center;
 }
 
 .hero-content{
