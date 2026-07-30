@@ -17,3 +17,15 @@ tabs.forEach(tab => {
     });
 
 });
+const format = document.getElementById("format");
+const reproPrice = document.getElementById("repro-price");
+
+if (format && reproPrice) {
+
+    format.addEventListener("change", () => {
+
+        reproPrice.textContent = format.value + " €";
+
+    });
+
+}
