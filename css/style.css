@@ -120,8 +120,9 @@ footer {
 
 .hero-logo{
     display:block;
-    width:min(1000px, 90vw);
-    height:220px;
+    width:min(1200px, 95vw);
+    height:320px;
     object-fit:contain;
-    margin:20px auto;
+    margin:10px auto 30px;
 }
+
