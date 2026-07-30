@@ -5,10 +5,9 @@ body {
     color: #4b4038;
 }
 
-header {
-    text-align: center;
-    padding: 70px 20px;
-    background: #f5e8dc;
+header{
+    background:#f5e8dc;
+    padding:20px;
 }
 
 h1 {
