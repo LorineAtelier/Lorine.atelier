@@ -349,3 +349,15 @@ footer {
     border:1px solid #ddd;
     font-size:1rem;
 }
+
+/* ========================= */
+/* JAVA SCRIPT */
+/* ========================= */
+
+.tab-content{
+    display:none;
+}
+
+.tab-content.active{
+    display:block;
+}
