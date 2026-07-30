@@ -51,16 +51,18 @@
        <div class="product-options">
 
     <div class="tabs">
-        <button class="tab active" onclick="showOriginal()">
+
+        <button class="tab active" data-target="original">
             Original
         </button>
 
-        <button class="tab" onclick="showReproduction()">
+        <button class="tab" data-target="reproduction">
             Reproduction
         </button>
+
     </div>
 
-    <div id="original">
+    <div id="original" class="tab-content active">
 
         <p>✓ Pièce unique</p>
         <p>✓ Signée à la main</p>
@@ -70,22 +72,31 @@
 
     </div>
 
-    <div id="reproduction" style="display:none;">
+    <div id="reproduction" class="tab-content">
 
-        <label for="format">Choisissez un format :</label>
+        <label>Choisissez un format :</label>
 
         <select id="format">
 
-            <option>A5 - 18 €</option>
-            <option>A4 - 28 €</option>
-            <option>A3 - 39 €</option>
+            <option value="18">A5 - 18 €</option>
+            <option value="28" selected>A4 - 28 €</option>
+            <option value="39">A3 - 39 €</option>
 
         </select>
+
+        <p class="price">
+            <span id="repro-price">28 €</span>
+        </p>
 
         <p>Papier Fine Art</p>
 
     </div>
 
+</div>
+
+<a href="#" class="buy-button">
+    Ajouter au panier
+</a>
 </div>
 
 <a href="#" class="buy-button">
