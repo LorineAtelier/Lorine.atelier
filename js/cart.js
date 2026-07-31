@@ -68,6 +68,9 @@ if (toast) {
     }, 2000);
 
 }
+            });
+
+}
 
 const cartContainer = document.getElementById("cart-items");
 
