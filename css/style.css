@@ -412,10 +412,33 @@ footer {
 }
 
 .quantity-controls button:hover{
-
     background:#a17f6e;
 
 }
+
+.cart-item{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.cart-image{
+
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:12px;
+
+}
+
+
 
 
 
