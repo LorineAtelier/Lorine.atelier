@@ -40,6 +40,14 @@ if (addButton) {
             price
         });
 
+        console.log("Panier avant sauvegarde :", cart);
+
+        saveCart();
+
+        console.log("Panier enregistré :", localStorage.getItem("cart"));
+    
+        window.location.href = "panier.html";
+        
         saveCart();
 
         window.location.href = "panier.html";
