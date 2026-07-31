@@ -6,6 +6,22 @@ function saveCart() {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
+function updateCartCount() {
+
+    const cartCount = document.getElementById("cart-count");
+
+    if (!cartCount) return;
+
+    let totalItems = 0;
+
+    cart.forEach(item => {
+        totalItems += item.quantity;
+    });
+
+    cartCount.textContent = totalItems;
+
+}
+
 const addButton = document.getElementById("add-to-cart");
 
 if (addButton) {
@@ -54,7 +70,8 @@ if (existingItem) {
 }
 
         saveCart();
-
+        updateCartCount();
+        
 const toast = document.getElementById("toast");
 
 if (toast) {
@@ -195,20 +212,7 @@ document.querySelectorAll(".qty-minus").forEach(button => {
 });
 
 // Compteur du panier
-const cartCount = document.getElementById("cart-count");
-
-if (cartCount) {
-
-    let totalItems = 0;
-
-    cart.forEach(item => {
-        totalItems += item.quantity;
-    });
-
-    cartCount.textContent = totalItems;
-
-}
-
+updateCartCount();
 
 
 
