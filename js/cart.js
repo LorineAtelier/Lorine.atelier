@@ -14,7 +14,17 @@ function loadCart() {
 }
 
 // Afficher le toast
-showToast();
+const toast = document.getElementById("toast");
+
+if (toast) {
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 2000);
+
+}
 
 // Initialiser la page
 function init() {
