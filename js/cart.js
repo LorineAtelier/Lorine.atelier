@@ -303,6 +303,21 @@ ${item.price * item.quantity} €
 
     miniCartItems.innerHTML = html;
 
+    
+    // Boutons +
+document.querySelectorAll(".mini-plus").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const index = button.dataset.index;
+
+        cart[index].quantity++;
+
+        refreshCart();
+
+    });
+
+});
 }
 
 // Mini-panier
