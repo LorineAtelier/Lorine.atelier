@@ -29,7 +29,7 @@ if (addButton) {
             price = Number(select.value);
         }
 
-        
+      const image = document.querySelector(".product-image img").src;
       const existingItem = cart.find(item =>
     item.title === title &&
     item.type === type &&
@@ -43,12 +43,13 @@ if (existingItem) {
 } else {
 
     cart.push({
-        title,
-        type,
-        format,
-        price,
-        quantity: 1
-    });
+    title,
+    type,
+    format,
+    price,
+    quantity: 1,
+    image
+});
 
 }
 
