@@ -318,6 +318,29 @@ document.querySelectorAll(".mini-plus").forEach(button => {
     });
 
 });
+
+    // Boutons -
+document.querySelectorAll(".mini-minus").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const index = button.dataset.index;
+
+        if (cart[index].quantity > 1) {
+
+            cart[index].quantity--;
+
+        } else {
+
+            cart.splice(index, 1);
+
+        }
+
+        refreshCart();
+
+    });
+
+});
 }
 
 // Mini-panier
