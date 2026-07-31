@@ -214,6 +214,25 @@ document.querySelectorAll(".qty-minus").forEach(button => {
 // Compteur du panier
 updateCartCount();
 
+// Mini-panier
+const cartLink = document.getElementById("cart-link");
+const miniCart = document.getElementById("mini-cart");
+
+if (cartLink && miniCart) {
+
+    cartLink.addEventListener("click", (event) => {
+
+        event.preventDefault();
+
+        miniCart.classList.toggle("open");
+
+    });
+
+}
+
+
+
+
 
 
 
