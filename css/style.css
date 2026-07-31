@@ -373,6 +373,42 @@ footer {
 }
 
 
+/* ========================= */
+/* PAGE PRODUIT */
+/* ========================= */
+
+.product-page{
+
+    display:flex;
+    gap:50px;
+    align-items:flex-start;
+
+}
+
+.product-image{
+
+    flex:1;
+
+}
+
+.product-image img{
+
+    width:100%;
+    max-width:500px;
+    height:auto;
+
+    border-radius:18px;
+
+    display:block;
+
+}
+
+.product-info{
+
+    flex:1;
+
+}
+
 
 /* ========================= */
 /* JAVA SCRIPT */
