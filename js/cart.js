@@ -234,9 +234,25 @@ function updateMiniCart() {
 
             total += item.price * item.quantity;
 
-            html += `
-                <p>${item.title} × ${item.quantity} — ${item.price * item.quantity} €</p>
-            `;
+           html += `
+    <div class="mini-cart-item">
+
+        <img src="${item.image}" alt="${item.title}">
+
+        <div class="mini-cart-info">
+
+            <strong>${item.title}</strong><br>
+
+            ${item.type}<br>
+
+            ${item.format ? item.format + "<br>" : ""}
+
+            ${item.price * item.quantity} €
+
+        </div>
+
+    </div>
+`;
 
         });
 
