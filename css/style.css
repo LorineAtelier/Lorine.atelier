@@ -385,3 +385,38 @@ footer {
 .tab-content.active{
     display:block;
 }
+
+
+.quantity-controls{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin:15px 0;
+
+}
+
+.quantity-controls button{
+
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius:50%;
+    background:#80665a;
+    color:white;
+    cursor:pointer;
+    font-size:1.2rem;
+    transition:.3s;
+
+}
+
+.quantity-controls button:hover{
+
+    background:#a17f6e;
+
+}
+
+
+
+
