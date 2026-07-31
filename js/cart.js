@@ -242,7 +242,6 @@ document.querySelectorAll(".qty-minus").forEach(button => {
 });
 
 // Compteur du panier
-init();
 
 function updateMiniCart() {
 
