@@ -53,14 +53,6 @@ if (existingItem) {
 
 }
 
-        
-        saveCart();
-
-        window.location.href = "panier.html";
-
-    });
-
-}
 
 const cartContainer = document.getElementById("cart-items");
 
