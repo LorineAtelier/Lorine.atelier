@@ -475,7 +475,33 @@ footer {
 }
 
 
+#cart-link{
 
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+    font-weight:bold;
+
+}
+
+#cart-count{
+
+    background:#80665a;
+    color:white;
+
+    width:22px;
+    height:22px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:.85rem;
+
+}
 
 
 
