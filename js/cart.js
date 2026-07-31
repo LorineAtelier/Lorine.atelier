@@ -217,9 +217,31 @@ updateCartCount();
 // Mini-panier
 const cartLink = document.getElementById("cart-link");
 const miniCart = document.getElementById("mini-cart");
+const miniCartItems = document.getElementById("mini-cart-items");
 
 if (cartLink && miniCart) {
 
+    if (miniCartItems) {
+
+    let html = "";
+    let total = 0;
+
+    cart.forEach(item => {
+
+        total += item.price * item.quantity;
+
+        html += `
+            <p>${item.title} × ${item.quantity} — ${item.price * item.quantity} €</p>
+        `;
+
+    });
+
+    html += `<hr>`;
+    html += `<p><strong>Total : ${total} €</strong></p>`;
+
+    miniCartItems.innerHTML = html;
+
+}
     cartLink.addEventListener("click", (event) => {
 
         event.preventDefault();
