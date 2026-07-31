@@ -607,5 +607,46 @@ footer {
 }
 
 
+.mini-cart-item{
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+    padding-bottom:15px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.mini-cart-item img{
+
+    width:65px;
+
+    height:65px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+.mini-cart-info{
+
+    flex:1;
+
+    color:#4b4038;
+
+    line-height:1.5;
+
+    font-size:.95rem;
+
+}
+
+
 
 
