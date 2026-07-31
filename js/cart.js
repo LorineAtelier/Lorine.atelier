@@ -14,7 +14,7 @@ function updateCartCount() {
 
     let totalItems = 0;
 
-    cart.forEach(item => {
+    cart.forEach(item, index => {
         totalItems += item.quantity;
     });
 
