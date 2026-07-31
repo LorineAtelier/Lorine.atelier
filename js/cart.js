@@ -12,7 +12,7 @@ if (addButton) {
 
     addButton.addEventListener("click", () => {
 
-        const title = document.querySelector(".product-info h1").textContent;
+       const title = document.querySelector(".product-info h1").textContent.trim();
 
         let type = "Original";
         let format = "";
