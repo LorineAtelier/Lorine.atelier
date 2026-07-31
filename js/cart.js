@@ -43,3 +43,48 @@ if (addButton) {
     });
 
 }
+
+const cartContainer = document.getElementById("cart-items");
+
+if (cartContainer) {
+
+    if (cart.length === 0) {
+
+        cartContainer.innerHTML = "<p>Votre panier est vide.</p>";
+
+    } else {
+
+        let html = "";
+        let total = 0;
+
+        cart.forEach((item, index) => {
+
+            total += item.price;
+
+            html += `
+                <div class="cart-item">
+                    <h2>${item.title}</h2>
+
+                    <p>${item.type}</p>
+
+                    ${item.format ? `<p>${item.format}</p>` : ""}
+
+                    <p class="price">${item.price} €</p>
+
+                    <button class="remove-item" data-index="${index}">
+                        Supprimer
+                    </button>
+                </div>
+            `;
+
+        });
+
+        html += `<h2>Total : ${total} €</h2>`;
+
+        cartContainer.innerHTML = html;
+
+    }
+
+}
+
+
