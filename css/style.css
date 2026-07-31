@@ -504,4 +504,45 @@ footer {
 }
 
 
+/* ========================= */
+/* TOAST */
+/* ========================= */
+
+#toast{
+
+    position:fixed;
+
+    bottom:30px;
+    right:30px;
+
+    background:#80665a;
+    color:white;
+
+    padding:18px 28px;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:.35s;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+}
+
+#toast.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
 
