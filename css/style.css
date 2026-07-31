@@ -545,4 +545,67 @@ footer {
 }
 
 
+/* ========================= */
+/* MINI PANIER */
+/* ========================= */
+
+.mini-cart{
+
+    position:fixed;
+
+    top:80px;
+    right:20px;
+
+    width:320px;
+
+    background:white;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    padding:20px;
+
+    display:none;
+
+    z-index:9999;
+
+}
+
+.mini-cart.open{
+
+    display:block;
+
+}
+
+.mini-cart h3{
+
+    margin-top:0;
+
+    color:#80665a;
+
+}
+
+.mini-cart-button{
+
+    display:block;
+
+    margin-top:20px;
+
+    text-align:center;
+
+    padding:12px;
+
+    background:#80665a;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+}
+
+
+
 
