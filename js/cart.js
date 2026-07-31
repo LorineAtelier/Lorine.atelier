@@ -245,11 +245,21 @@ function updateMiniCart() {
 
             ${item.type}<br>
 
-            ${item.format ? item.format + "<br>" : ""}
+${item.format ? item.format + "<br>" : ""}
 
-            Quantité : ${item.quantity}<br>
+<div class="mini-qty">
 
-            ${item.price * item.quantity} €
+    <button class="mini-minus" data-index="${index}">−</button>
+
+    <span>${item.quantity}</span>
+
+    ${item.type === "Reproduction"
+        ? `<button class="mini-plus" data-index="${index}">+</button>`
+        : ""}
+
+</div>
+
+${item.price * item.quantity} €
 
         </div>
 
