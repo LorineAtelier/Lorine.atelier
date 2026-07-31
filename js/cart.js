@@ -29,6 +29,8 @@ if (addButton) {
             price = Number(select.value);
         }
 
+        console.log("Bouton cliqué !");
+        
         cart.push({
             title,
             type,
