@@ -79,31 +79,39 @@ if (cartContainer) {
 
             total += item.price * item.quantity;
 
-            html += `
-                <div class="cart-item">
-                    <h2>${item.title}</h2>
+           html += `
+    <div class="cart-item">
 
-          <p>${item.type}</p>
+        <img src="${item.image}" alt="${item.title}" class="cart-image">
 
-                    ${item.format ? `<p>${item.format}</p>` : ""}
+        <div class="cart-info">
 
-                    <p class="quantity-controls">
+            <h2>${item.title}</h2>
 
-                    <button class="qty-minus" data-index="${index}">−</button>
+            <p>${item.type}</p>
 
-                    <span>${item.quantity}</span>
+            ${item.format ? `<p>${item.format}</p>` : ""}
 
-                    <button class="qty-plus" data-index="${index}">+</button>
+            <p class="quantity-controls">
 
-        </p>
+                <button class="qty-minus" data-index="${index}">−</button>
 
-                    <p class="price">${item.price * item.quantity} €</p>
+                <span>${item.quantity}</span>
 
-                    <button class="remove-item" data-index="${index}">
-                        Supprimer
-                    </button>
-                </div>
-            `;
+                <button class="qty-plus" data-index="${index}">+</button>
+
+            </p>
+
+            <p class="price">${item.price * item.quantity} €</p>
+
+            <button class="remove-item" data-index="${index}">
+                Supprimer
+            </button>
+
+        </div>
+
+    </div>
+`;
 
         });
 
