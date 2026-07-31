@@ -37,11 +37,6 @@ if (addButton) {
             price
         });
 
-
-        saveCart();
-
-    
-        window.location.href = "panier.html";
         
         saveCart();
 
