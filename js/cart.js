@@ -324,6 +324,17 @@ if (cartLink && miniCart) {
 }
 
 
+function refreshCart() {
+
+    saveCart();
+
+    updateCartCount();
+
+    updateMiniCart();
+
+}
+
+
 
 
 
