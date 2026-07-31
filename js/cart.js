@@ -247,6 +247,8 @@ function updateMiniCart() {
 
             ${item.format ? item.format + "<br>" : ""}
 
+            Quantité : ${item.quantity}<br>
+
             ${item.price * item.quantity} €
 
         </div>
