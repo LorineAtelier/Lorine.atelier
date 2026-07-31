@@ -87,6 +87,25 @@ if (cartContainer) {
 
     }
 
+    // Boutons supprimer
+const removeButtons = document.querySelectorAll(".remove-item");
+
+removeButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const index = button.dataset.index;
+
+        cart.splice(index, 1);
+
+        saveCart();
+
+        location.reload();
+
+    });
+
+});
+
 }
 
 
