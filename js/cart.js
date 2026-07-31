@@ -214,6 +214,40 @@ document.querySelectorAll(".qty-minus").forEach(button => {
 // Compteur du panier
 updateCartCount();
 
+function updateMiniCart() {
+
+    const miniCartItems = document.getElementById("mini-cart-items");
+
+    if (!miniCartItems) return;
+
+    let html = "";
+    let total = 0;
+
+    if (cart.length === 0) {
+
+        html = "<p>Votre panier est vide.</p>";
+
+    } else {
+
+        cart.forEach(item => {
+
+            total += item.price * item.quantity;
+
+            html += `
+                <p>${item.title} × ${item.quantity} — ${item.price * item.quantity} €</p>
+            `;
+
+        });
+
+        html += `<hr>`;
+        html += `<p><strong>Total : ${total} €</strong></p>`;
+
+    }
+
+    miniCartItems.innerHTML = html;
+
+}
+
 // Mini-panier
 const cartLink = document.getElementById("cart-link");
 const miniCart = document.getElementById("mini-cart");
