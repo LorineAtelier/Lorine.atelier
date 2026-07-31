@@ -30,12 +30,27 @@ if (addButton) {
         }
 
         
-        cart.push({
-            title,
-            type,
-            format,
-            price
-        });
+      const existingItem = cart.find(item =>
+    item.title === title &&
+    item.type === type &&
+    item.format === format
+);
+
+if (existingItem) {
+
+    existingItem.quantity++;
+
+} else {
+
+    cart.push({
+        title,
+        type,
+        format,
+        price,
+        quantity: 1
+    });
+
+}
 
         
         saveCart();
