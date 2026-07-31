@@ -86,7 +86,9 @@ if (cartContainer) {
 
                     ${item.format ? `<p>${item.format}</p>` : ""}
 
-                    <p class="price">${item.price} €</p>
+                    <p>Quantité : ${item.quantity}</p>
+
+                    <p class="price">${item.price * item.quantity} €</p>
 
                     <button class="remove-item" data-index="${index}">
                         Supprimer
