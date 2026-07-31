@@ -1,5 +1,3 @@
-alert("cart.js chargé");
-
 // Récupère le panier existant ou en crée un vide
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -31,7 +29,6 @@ if (addButton) {
             price = Number(select.value);
         }
 
-        console.log("Bouton cliqué !");
         
         cart.push({
             title,
@@ -40,11 +37,9 @@ if (addButton) {
             price
         });
 
-        console.log("Panier avant sauvegarde :", cart);
 
         saveCart();
 
-        console.log("Panier enregistré :", localStorage.getItem("cart"));
     
         window.location.href = "panier.html";
         
