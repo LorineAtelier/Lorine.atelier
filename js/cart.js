@@ -76,7 +76,7 @@ if (cartContainer) {
 
         cart.forEach((item, index) => {
 
-            total += item.price;
+            total += item.price * item.quantity;
 
             html += `
                 <div class="cart-item">
