@@ -1,3 +1,5 @@
+alert("cart.js chargé");
+
 // Récupère le panier existant ou en crée un vide
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
