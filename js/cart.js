@@ -6,6 +6,25 @@ function saveCart() {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
+// Charger le panier
+function loadCart() {
+
+    cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+}
+
+// Afficher le toast
+showToast();
+
+// Initialiser la page
+function init() {
+
+    updateCartCount();
+
+    updateMiniCart();
+
+}
+
 function updateCartCount() {
 
     const cartCount = document.getElementById("cart-count");
@@ -213,7 +232,7 @@ document.querySelectorAll(".qty-minus").forEach(button => {
 });
 
 // Compteur du panier
-updateCartCount();
+init();
 
 function updateMiniCart() {
 
@@ -281,7 +300,7 @@ ${item.price * item.quantity} €
 const cartLink = document.getElementById("cart-link");
 const miniCart = document.getElementById("mini-cart");
 
-updateMiniCart();
+init();
 
 if (cartLink && miniCart) {
 
