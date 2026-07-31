@@ -1,4 +1,4 @@
-// Récupère le panier existant ou en crée un vide
+    // Récupère le panier existant ou en crée un vide
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // Fonction pour enregistrer le panier
@@ -82,11 +82,19 @@ if (cartContainer) {
                 <div class="cart-item">
                     <h2>${item.title}</h2>
 
-                    <p>${item.type}</p>
+          <p>${item.type}</p>
 
                     ${item.format ? `<p>${item.format}</p>` : ""}
 
-                    <p>Quantité : ${item.quantity}</p>
+                    <p class="quantity-controls">
+
+                    <button class="qty-minus" data-index="${index}">−</button>
+
+                    <span>${item.quantity}</span>
+
+                    <button class="qty-plus" data-index="${index}">+</button>
+
+        </p>
 
                     <p class="price">${item.price * item.quantity} €</p>
 
@@ -124,5 +132,49 @@ removeButtons.forEach(button => {
 });
 
 }
+
+// Boutons +
+document.querySelectorAll(".qty-plus").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const index = button.dataset.index;
+
+        cart[index].quantity++;
+
+        saveCart();
+
+        location.reload();
+
+    });
+
+});
+
+// Boutons -
+document.querySelectorAll(".qty-minus").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const index = button.dataset.index;
+
+        if (cart[index].quantity > 1) {
+
+            cart[index].quantity--;
+
+        } else {
+
+            cart.splice(index, 1);
+
+        }
+
+        saveCart();
+
+        location.reload();
+
+    });
+
+});
+
+
 
 
