@@ -286,13 +286,18 @@ ${item.price * item.quantity} €
 
         });
 
-        html += `<hr>`;
-        html += `<p><strong>Total : ${total} €</strong></p>`;
+html += `
+<div class="mini-cart-actions">
 
-        html += `
-            <button id="clear-cart" class="clear-cart-btn">
-                🗑️ Vider le panier
-            </button>
+    <button id="clear-cart" class="clear-cart-btn">
+        🗑️ Vider
+    </button>
+
+    <a href="cart.html" class="view-cart-btn">
+        🛒 Panier
+    </a>
+
+</div>
 `;
 
     }
