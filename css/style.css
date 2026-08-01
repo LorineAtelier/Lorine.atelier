@@ -648,5 +648,34 @@ footer {
 }
 
 
+.clear-cart-btn{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#80665a;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.clear-cart-btn:hover{
+
+    background:#9a7d6c;
+
+}
+
+
 
 
