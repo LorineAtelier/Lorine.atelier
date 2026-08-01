@@ -611,19 +611,50 @@ footer {
 
 .clear-cart-btn,
 .view-cart-btn {
+
     flex: 1;
+
     padding: 12px;
-    text-align: center;
+
     border-radius: 30px;
-    background: #80665a;
-    color: white;
+
+    text-align: center;
+
+    font-weight: 600;
+
     text-decoration: none;
+
     cursor: pointer;
-    transition: 0.3s;
-    border: none;
+
+    transition: .25s;
 }
 
-.clear-cart-btn:hover,
-.view-cart-btn:hover {
-    background: #9a7d6c;
+.clear-cart-btn{
+
+    background:white;
+
+    color:#80665a;
+
+    border:2px solid #80665a;
+
+}
+
+.clear-cart-btn:hover{
+
+    background:#f5f0ed;
+
+}
+
+.view-cart-btn{
+
+    background:#80665a;
+
+    color:white;
+
+}
+
+.view-cart-btn:hover{
+
+    background:#9a7d6c;
+
 }
