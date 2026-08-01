@@ -620,15 +620,19 @@ footer {
 
     text-align: center;
 
-    font-weight: 600;
-
     text-decoration: none;
+
+    font-family: inherit;
+
+    font-size: .95rem;
+
+    font-weight: 600;
 
     cursor: pointer;
 
     transition: .25s;
-}
 
+}
 .clear-cart-btn{
 
     background:white;
