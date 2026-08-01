@@ -662,3 +662,57 @@ footer {
     background:#9a7d6c;
 
 }
+
+.mini-qty{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-top:10px;
+
+}
+
+.mini-qty button{
+
+    background:none;
+
+    border:none;
+
+    padding:0;
+
+    font-size:1.2rem;
+
+    font-weight:300;
+
+    color:#8d7d72;
+
+    cursor:pointer;
+
+    transition:all .2s ease;
+
+}
+
+.mini-qty button:hover{
+
+    color:#80665a;
+
+    transform:scale(1.15);
+
+}
+
+.mini-qty span{
+
+    min-width:20px;
+
+    text-align:center;
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    color:#4b4038;
+
+}
