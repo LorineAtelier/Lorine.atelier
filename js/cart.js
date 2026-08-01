@@ -267,6 +267,8 @@ ${item.format ? item.format + "<br>" : ""}
 
 <div class="mini-qty">
 
+    <small>Quantité</small>
+
     <button class="mini-minus" data-index="${index}">−</button>
 
     <span>${item.quantity}</span>
