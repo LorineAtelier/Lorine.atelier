@@ -186,7 +186,6 @@ removeButtons.forEach(button => {
 
 });
 
-}
 
 // Boutons +
 document.querySelectorAll(".qty-plus").forEach(button => {
