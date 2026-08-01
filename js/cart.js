@@ -241,6 +241,24 @@ document.querySelectorAll(".qty-minus").forEach(button => {
 
 });
 
+const clearCart = document.getElementById("clear-cart");
+
+if (clearCart) {
+
+    clearCart.addEventListener("click", () => {
+
+        if (confirm("Vider complètement le panier ?")) {
+
+            cart = [];
+
+            refreshCart();
+
+        }
+
+    });
+
+}
+
 // Compteur du panier
 
 function updateMiniCart() {
