@@ -13,18 +13,6 @@ function loadCart() {
 
 }
 
-// Afficher le toast
-const toast = document.getElementById("toast");
-
-if (toast) {
-
-    toast.classList.add("show");
-
-    setTimeout(() => {
-        toast.classList.remove("show");
-    }, 2000);
-
-}
 
 // Initialiser la page
 function init() {
@@ -98,21 +86,20 @@ if (existingItem) {
 
 }
 
+
         saveCart();
         updateCartCount();
         updateMiniCart();
 
-        showToast();
-        
 const toast = document.getElementById("toast");
 
 if (toast) {
 
     toast.classList.add("show");
 
-    setTimeout(() => {
+        setTimeout(() => {
 
-        toast.classList.remove("show");
+    toast.classList.remove("show");
 
     }, 2000);
 
