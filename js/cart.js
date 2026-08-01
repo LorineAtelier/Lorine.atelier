@@ -299,6 +299,12 @@ ${item.price * item.quantity} €
         html += `<hr>`;
         html += `<p><strong>Total : ${total} €</strong></p>`;
 
+        html += `
+            <button id="clear-cart" class="clear-cart-btn">
+                🗑️ Vider le panier
+            </button>
+`;
+
     }
 
     miniCartItems.innerHTML = html;
