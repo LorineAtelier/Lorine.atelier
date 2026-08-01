@@ -230,22 +230,6 @@ document.querySelectorAll(".qty-minus").forEach(button => {
 
 });
 
-const clearCart = document.getElementById("clear-cart");
-
-if (clearCart) {
-
-    clearCart.addEventListener("click", () => {
-
-        if (confirm("Vider complètement le panier ?")) {
-
-            cart = [];
-
-            refreshCart();
-
-        }
-
-    });
-
 }
 
 // Compteur du panier
@@ -354,7 +338,28 @@ document.querySelectorAll(".mini-minus").forEach(button => {
     });
 
 });
+
+    
+// Vider le panier
+
+const clearCart = document.getElementById("clear-cart");
+
+if (clearCart) {
+
+    clearCart.addEventListener("click", () => {
+
+        if (confirm("Vider complètement le panier ?")) {
+
+            cart = [];
+
+            refreshCart();
+
+        }
+
+    });
 }
+
+} 
 
 // Mini-panier
 const cartLink = document.getElementById("cart-link");
