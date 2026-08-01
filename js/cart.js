@@ -101,6 +101,8 @@ if (existingItem) {
         saveCart();
         updateCartCount();
         updateMiniCart();
+
+        showToast();
         
 const toast = document.getElementById("toast");
 
